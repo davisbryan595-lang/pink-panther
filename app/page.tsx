@@ -1,9 +1,23 @@
+import Navbar from "@/components/navbar"
+import Hero from "@/components/hero"
+import About from "@/components/about"
+import Services from "@/components/services"
+import Gallery from "@/components/gallery"
+import Pricing from "@/components/pricing"
+import Contact from "@/components/contact"
+import Footer from "@/components/footer"
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="flex items-center justify-center h-screen">
-        <h1 className="text-4xl font-bold">Pink Panther Window Cleaning</h1>
-      </div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Gallery />
+      <Pricing />
+      <Contact />
+      <Footer />
     </main>
   )
 }
