@@ -1,0 +1,13 @@
+... existing code ...
+
+@layer base {
+  * {
+    /* <CHANGE> Removed invalid border-border class, keeping only outline-ring/50 */
+    @apply outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+... existing code ...
