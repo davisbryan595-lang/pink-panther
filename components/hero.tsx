@@ -57,17 +57,10 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="text-pink-600" size={32} />
+        <ChevronDown className="text-pink-400" size={32} />
       </div>
 
       <style jsx>{`
-        @keyframes bounce-slow {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
-        }
-        .animate-bounce-slow {
-          animation: bounce-slow 3s ease-in-out infinite;
-        }
         @keyframes fade-in-up {
           from {
             opacity: 0;
