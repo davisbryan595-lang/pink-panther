@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { Providers } from './providers'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -39,11 +40,11 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className={`font-sans antialiased bg-white`}>
-        {children}
+        <Providers>{children}</Providers>
         <Analytics />
         <Script
           id="tawk-widget"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
